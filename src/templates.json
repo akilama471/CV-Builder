@@ -1,0 +1,28 @@
+// templates.json
+[
+  {
+    "id": 1,
+    "name": "Template 1",
+    "thumbnail": "path/to/thumbnail1.jpg",
+    "templateHtml": "<div><h2>{{ name }}</h2><p>{{ address }}</p><p>{{ phone }}</p><p>{{ email }}</p></div>",
+    "defaultData": {
+      "name": "Your Name",
+      "address": "Your Address",
+      "phone": "Your Phone Number",
+      "email": "Your Email"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Template 2",
+    "thumbnail": "path/to/thumbnail2.jpg",
+    "templateHtml": "<div><h1>{{ name }}</h1><p>{{ address }}</p><p>{{ phone }}</p><p>{{ email }}</p></div>",
+    "defaultData": {
+      "name": "Your Name",
+      "address": "Your Address",
+      "phone": "Your Phone Number",
+      "email": "Your Email"
+    }
+  }
+  // Add more templates as needed
+]

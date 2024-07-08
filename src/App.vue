@@ -1,26 +1,49 @@
+<!-- src/App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <h1>CV Generator</h1>
+    <TemplateSelector
+      v-if="!selectedTemplate"
+      :templates="templates"
+      @select="handleTemplateSelect"
+    />
+    <CVEditor v-if="selectedTemplate" :template="selectedTemplate" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TemplateSelector from './components/TemplateSelector.vue';
+import CVEditor from './components/CVEditor.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    TemplateSelector,
+    CVEditor
+  },
+  data() {
+    return {
+      templates: [],
+      selectedTemplate: null
+    };
+  },
+  created() {
+    fetch('./templates/templates.json')
+      .then(response => response.json())
+      .then(data => {
+        this.templates = data;
+      });
+  },
+  methods: {
+    handleTemplateSelect(template) {
+      this.selectedTemplate = template;
+    }
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 </style>
