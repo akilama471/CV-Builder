@@ -7,7 +7,7 @@
       :templates="templates"
       @select="handleTemplateSelect"
     />
-    <CVEditor v-if="selectedTemplate" :template="selectedTemplate" />
+    <CVEditor v-if="selectedTemplate" :template="selectedTemplate" @back="selectedTemplate = null" />
   </div>
 </template>
 
@@ -42,8 +42,18 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
 .container {
-  width: 80%;
-  margin: 0 auto;
+  min-height: 100vh;
 }
 </style>

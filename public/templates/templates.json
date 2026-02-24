@@ -1,26 +1,738 @@
 [
   {
-    "id": 1,
-    "name": "Template 1",
+    "id": "classic",
+    "name": "Classic",
     "thumbnail": "templates/thumbnail1.png",
-    "templateHtml": "<div><h2>{{ name }}</h2><p>{{ address }}</p><p>{{ phone }}</p><p>{{ email }}</p></div>",
     "defaultData": {
-      "name": "Your Name",
-      "address": "Your Address",
-      "phone": "Your Phone Number",
-      "email": "Your Email"
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Science", "marks": "A+" },
+            { "name": "History", "marks": "A" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "HSC",
+          "year": "2018",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Physics", "marks": "A" },
+            { "name": "Chemistry", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Biology", "marks": "A" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
     }
   },
   {
-    "id": 2,
-    "name": "Template 2",
+    "id": "modern",
+    "name": "Modern",
     "thumbnail": "templates/thumbnail2.png",
-    "templateHtml": "<div><h1>{{ name }}</h1><p>{{ address }}</p><p>{{ phone }}</p><p>{{ email }}</p></div>",
     "defaultData": {
-      "name": "Your Name",
-      "address": "Your Address",
-      "phone": "Your Phone Number",
-      "email": "Your Email"
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Science", "marks": "A+" },
+            { "name": "History", "marks": "A" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "HSC",
+          "year": "2018",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Physics", "marks": "A" },
+            { "name": "Chemistry", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Biology", "marks": "A" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "minimal",
+    "name": "Minimal",
+    "thumbnail": "templates/thumbnail1.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Science", "marks": "A+" },
+            { "name": "History", "marks": "A" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "HSC",
+          "year": "2018",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Physics", "marks": "A" },
+            { "name": "Chemistry", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Biology", "marks": "A" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "creative",
+    "name": "Creative",
+    "thumbnail": "templates/thumbnail2.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Science", "marks": "A+" },
+            { "name": "History", "marks": "A" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "HSC",
+          "year": "2018",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Physics", "marks": "A" },
+            { "name": "Chemistry", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" },
+            { "name": "Biology", "marks": "A" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "template1",
+    "name": "Professional",
+    "thumbnail": "templates/thumbnail1.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" },
+            { "name": "Mathematics", "marks": "A" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "template2",
+    "name": "Executive",
+    "thumbnail": "templates/thumbnail2.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "template3",
+    "name": "Minimalist",
+    "thumbnail": "templates/thumbnail1.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "template4",
+    "name": "Modern Dark",
+    "thumbnail": "templates/thumbnail2.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
+    }
+  },
+  {
+    "id": "template5",
+    "name": "Elegant",
+    "thumbnail": "templates/thumbnail1.png",
+    "defaultData": {
+      "personal": {
+        "fullName": "John Doe",
+        "email": "john.doe@email.com",
+        "phone": "+1 234 567 890",
+        "address": "123 Main Street, City, Country",
+        "linkedin": "linkedin.com/in/johndoe",
+        "website": "johndoe.com",
+        "summary": "Experienced professional with expertise in...",
+        "image": ""
+      },
+      "experience": [
+        {
+          "id": 1,
+          "company": "Company Name",
+          "position": "Job Title",
+          "startDate": "2020-01",
+          "endDate": "Present",
+          "description": "Key responsibilities and achievements"
+        }
+      ],
+      "education": [
+        {
+          "id": 1,
+          "institution": "University Name",
+          "degree": "Bachelor's Degree",
+          "field": "Computer Science",
+          "startDate": "2016-09",
+          "endDate": "2020-05"
+        }
+      ],
+      "skills": [
+        { "id": 1, "name": "JavaScript", "level": "Advanced" },
+        { "id": 2, "name": "Vue.js", "level": "Intermediate" }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Name",
+          "description": "Project description",
+          "technologies": "Vue.js, Node.js",
+          "link": "github.com/project"
+        }
+      ],
+      "certifications": [
+        {
+          "id": 1,
+          "name": "Certification Name",
+          "issuer": "Issuing Organization",
+          "date": "2023-01"
+        }
+      ],
+      "languages": [
+        { "id": 1, "name": "English", "level": "Native" },
+        { "id": 2, "name": "Spanish", "level": "Fluent" }
+      ],
+      "exams": [
+        {
+          "id": 1,
+          "name": "SSC",
+          "year": "2016",
+          "place": "Dhaka Board",
+          "subjects": [
+            { "name": "Bangla", "marks": "A" },
+            { "name": "English", "marks": "A+" }
+          ]
+        }
+      ],
+      "interests": "Technology, Reading, Hiking"
     }
   }
 ]
